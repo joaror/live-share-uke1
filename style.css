@@ -31,12 +31,11 @@ body {
     position: relative;
     overflow: hidden;
     background:
-    radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.25) 0%, rgba(255, 215, 0, 0.05) 30%, transparent 60%),
-    radial-gradient(circle at 15% 75%, rgba(255, 215, 0, 0.3) 0%, rgba(184, 134, 11, 0.1) 20%, transparent 45%),
+    radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.25) 25%, rgba(255, 215, 0, 0.05) 30%, transparent 30%),
+    radial-gradient(circle at 15% 75%, rgba(255, 215, 0, 0.3) 21%, rgba(184, 134, 11, 0.1) 20%, transparent 45%),
     radial-gradient(circle at 70% 65%, rgba(255, 215, 0, 0.2) 0%, transparent 40%),
-        
     radial-gradient(circle at 30% 25%, rgba(255, 215, 0, 0.25) 0%, transparent 25%),
-    #black;
+    #111111;
     
  
 
@@ -102,12 +101,10 @@ body {
    font-family: monospace;
    border: 10px dashed #ffd700;
    border-radius: 1em;
-   
    ul {
       border: 8px solid white;
       padding: 3em;
       border-radius: 2em;
-      background-color: #ffd700;
       background: repeating-radial-gradient(green, #f0d643 5px);
       text-shadow: 2px 2px 4px black;
    }
