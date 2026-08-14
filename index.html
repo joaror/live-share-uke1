@@ -7,28 +7,14 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <input id="input-test" value="asd" type="text">
     <button onclick="changeBgColor()">Bytt farge</button>
     <button onclick="changeLayout()">Bytt layout</button>
 
     <h1 class="title">THE DEPLOYERS</h1>
-    
     <div id="page" class="row space-evenly gap-5 wrap">
 
-        <div class="mk column padding-1 basis margin-1">
-            <div class="column align-center">
-                <h1>Martinius Karlsen</h1>
-                <h2>Drammen</h2>
-            </div>
-            <div>
-                <ul>
-                    <li>Programmering</li>
-                    <li>Simulator spill</li>
-                    <li>Problemløsning</li>
-                    <li>Aliens & UFO's</li>
-                    <li>Parapsykologi</li>
-                    <li>Self-hosting</li>
-                </ul>
-            </div>
+        <div id="martinius" onclick="toggleMartinius()" class="mk column padding-1 basis margin-1 align-center justify-center">
         </div>
         
  <div class="Jesse basis">
@@ -52,18 +38,15 @@
     </ul>
  </div>
 
- <div class="joakim basis">
-     <h1 class="text">Joakim Rørstad</h1>
-     <h2 class="text">Tønsberg</h2>
-     <ul class="text">
-        <li>Musikk</li>
-        <li>IT</li>
-        <li>Friluft</li>
-    </ul>
- </div>
+ <div class="joakim column justify-center basis" id="Joakim" onclick="toggleJoakim()"></div>
+
+
 
  <div class="Lavinia basis">
 
+    <div class="Knapper">
+        <button onclick="showLavinia()">Lavinia</button>
+    </div>
     <h1>
         Lavinia Caroline 
         
@@ -74,16 +57,23 @@
     </h2>
 
     
-    <ul>
-        
-        <li>Musikk</li>
-        <li>Gaming</li>
-        <li>Natur</li> 
-        <li>Lage mat</li>
-     
+    <ul class="profile-box">
+      <li>Musikk</li>
+      <li>Gaming</li>
+      <li>natur</li>
+      <li>matlaging</li>
+ 
     
     </ul>
  </div>
+
+
+
+
+ <div id="cato" class="Cato basis" onclick="showCato()">
+    
+ </div>
+
 
 
 </div>
