@@ -62,10 +62,6 @@ button:hover {
     #0a0a0a;
 
 
-      
-
-
-
 
       h1, h2 {
        
@@ -134,6 +130,14 @@ button:hover {
    gap: 5em;
 }
 
+.padding-0 {
+   padding: 0em;
+}
+
+.margin-0 {
+   margin: 0em;
+}
+
 .padding-1 {
    padding: 1em;
 }
@@ -189,6 +193,7 @@ button:hover {
    font-family: monospace;
    border: 10px dashed #ffd700;
    border-radius: 1em;
+   cursor: pointer;
    ul {
       border: 8px solid white;
       padding: 3em;
@@ -270,62 +275,6 @@ button:hover {
    }
 }
 
-.Lavinia {  
-   background-color: #b6a5e4;
-   background-image: repeating-linear-gradient(45deg, #b098f4, #3f345e 10px, #5c4b7a 10px, #5c4b7a 20px);
-   padding: 20px;
-   color: #ffd700;
-   border: 1px solid #ffd700;
-   border-radius: 15px;
-   box-shadow: 0 0 15px rgba(255, 215, 0, 0.5), 0 0 35px rgba(184, 134, 11, 0.5);
-   max-width: 400px;
-
-   /* NEW: center everything inside .Lavinia */
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-
-   h1 {
-      text-shadow: 2px 2px 10px gold;
-      margin: 0;
-      margin-bottom: 10px;
-      background: linear-gradient(to right, #ffd700, #f57403, #d04702);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-   }
-
-   h2 { 
-      text-shadow: 2px 2px 10px gold;
-      font-size: 1.5em;
-      font-weight: 900;
-   }
-
-   .profile-box {
-   background-color: #7a68a8;
-   border: 1px solid #ffd700;
-   border-radius: 15px;
-   box-shadow: 0 0 15px rgba(255, 215, 0, 0.5), 0 0 35px rgba(184, 134, 11, 0.5);
-   padding: 10px 20px;
-   margin-bottom: 10px;
-   list-style: none;
-   text-align: left;   
-
-   li {
-      color: rgb(211, 182, 22);
-      font-size: 1.2em;
-      margin-bottom: 5px;
-      text-shadow: 1px 1px 2px rgb(24, 153, 82);
-   }
-
-   li::before {
-      content: "• ";
-      color: #ffd700;
-   }
-}
-
-   }
 
     
 .Cato {
@@ -338,5 +287,83 @@ button:hover {
    color: rgb(14, 196, 216);
    background: linear-gradient(rgb(153, 28, 28), rgb(65, 65, 196))
 }
+
+
+.Lavinia {
+   background-color: #b6a5e4;
+   background-image: repeating-linear-gradient(45deg, #c3aef7, #3f345e 12px, #5c4b7a 12px, #5c4b7a 24px);
+   padding: 30px;
+   color: #ffd700;
+   border: 1px solid #ffd700;
+   border-radius: 20px;
+   box-shadow: 0 0 20px rgba(255, 215, 0, 0.5), 0 0 45px rgba(184, 134, 11, 0.4), 0 10px 25px rgba(0,0,0,0.35);
+   max-width: 400px;
+   font-family: Georgia, serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Lavinia:hover {
+   transform: translateY(-4px);
+   box-shadow: 0 0 30px rgba(255, 215, 0, 0.7), 0 0 60px rgba(184, 134, 11, 0.5), 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.Lavinia h1 {
+   font-size: 2.2em;
+   margin: 0;
+   margin-bottom: 6px;
+   background: linear-gradient(to right, #ffe680, #ffd700, #f57403);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   letter-spacing: 1.5px;
+   filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.4));
+}
+
+.Lavinia h2 {
+   font-size: 1.3em;
+   font-weight: 700;
+   margin: 0;
+   margin-bottom: 25px;
+   color: #ffe680;
+   text-shadow: 1px 1px 6px rgba(255,215,0,0.6);
+   letter-spacing: 0.5px;
+}
+
+.Lavinia .profile-box {
+   background: linear-gradient(160deg, #8a76bb, #6c5a99);
+   border: 1px solid #ffd700;
+   border-radius: 15px;
+   box-shadow: inset 0 0 10px rgba(255,215,0,0.15), 0 0 20px rgba(184, 134, 11, 0.35);
+   padding: 18px 28px;
+   margin-bottom: 10px;
+   list-style: none;
+   text-align: left;
+   width: 100%;
+}
+
+.Lavinia .profile-box li {
+   color: #f4d35e;
+   font-size: 1.15em;
+   margin-bottom: 10px;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+.Lavinia .profile-box li:last-child {
+   margin-bottom: 0;
+}
+
+.Lavinia .profile-box li::before {
+   content: "✦ ";
+   color: #ffd700;
+}
+
+
+
+
+
 
       

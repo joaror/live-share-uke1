@@ -7,26 +7,24 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input id="input-test" value="asd" type="text">
-    <button onclick="changeBgColor()">Bytt farge</button>
-    <button onclick="changeLayout()">Bytt layout</button>
+    <h1 class="title margin-0">THE DEPLOYERS</h1>
+    
+    <div class="row gap-2 padding-1">
+        <button onclick="changeBgColor()">Bytt farge</button>
+        <button onclick="changeLayout()">Bytt layout</button>
+        <button id="clearCards" onclick="clearAllCards()">Clear</button>
+    </div>
 
-    <h1 class="title">THE DEPLOYERS</h1>
     <div id="page" class="row space-evenly gap-5 wrap">
 
         <div id="martinius" onclick="toggleMartinius()" class="mk column padding-1 basis margin-1 align-center justify-center">
         </div>
         
- <div class="Jesse basis">
+ <div  class="Jesse" class="jesse basis" onclick="toggleJesse()">
 
-    <h1>
-        Jesse Yuu Laukvik
-    </h1>
-
-    <h2>
-        Stjørdal, Trøndelag
-    </h2>
-
+    
+    <h1>Jesse Yuu Laukvik</h1>
+    <h2>Stjørdal</h2>
     <h2>Ting jeg liker:</h2>
     <ul>
         <li>Gaming</li>
@@ -36,41 +34,31 @@
         <li>Tatoveringer</li>
         <li>Coffee & Redbull</li>
     </ul>
- </div>
+</div>
 
  <div class="joakim column justify-center basis" id="Joakim" onclick="toggleJoakim()"></div>
 
 
 
- <div class="Lavinia basis">
+ <div id="lavinia-info" class="Lavinia basis">
+  <h1>Lavinia Caroline</h1>
+  <h2>Sandvika, Bærum</h2>
+  <ul class="profile-box">
+    <li>Musikk</li>
+    <li>Gaming</li>
+    <li>Natur</li>
+    <li>Lage mat</li>
+  </ul>
+</div>
 
-    <div class="Knapper">
-        <button onclick="showLavinia()">Lavinia</button>
-    </div>
-    <h1>
-        Lavinia Caroline 
-        
-    </h1>
 
-    <h2>
-        Sandvika, Bærum
-    </h2>
 
-    
-    <ul class="profile-box">
-      <li>Musikk</li>
-      <li>Gaming</li>
-      <li>natur</li>
-      <li>matlaging</li>
  
-    
-    </ul>
- </div>
 
 
 
 
- <div id="cato" class="Cato basis" onclick="showCato()">
+ <div id="cato" class="Cato basis">
     
  </div>
 
@@ -115,4 +103,4 @@ Bruk kun html + css, dere skal bygge på den siden videre.
 Bruk live share sånn at alle får kodet 😎 
 
 Last opp til github og del med meg  */
- -->
+ -->>
