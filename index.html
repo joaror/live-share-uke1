@@ -15,13 +15,13 @@
         <button id="clearCards" onclick="clearAllCards()">Clear</button>
     </div>
 
-    <div id="page" class="row space-evenly gap-5 wrap">
+    <div id="page" class="row space-evenly margin-1 gap-5 wrap">
 
-        <div id="martinius" onclick="toggleMartinius()" class="mk column padding-1 basis margin-1 align-center justify-center">
-        </div>
+        <div id="martinius" onclick="showMartinius()" class="mk column padding-1 basis margin-1 align-center justify-center">
+    </div>
         
- <div  class="Jesse" class="jesse basis" onclick="toggleJesse()">
-
+    <div  id="Jesse" class="Jesse basis" onclick="toggleJesse()">
+    
     
     <h1>Jesse Yuu Laukvik</h1>
     <h2>Stjørdal</h2>
@@ -36,27 +36,34 @@
     </ul>
 </div>
 
- <div class="joakim column justify-center basis" id="Joakim" onclick="toggleJoakim()"></div>
-
-
-
- <div id="lavinia-info" class="Lavinia basis">
-  <h1>Lavinia Caroline</h1>
-  <h2>Sandvika, Bærum</h2>
-  <ul class="profile-box">
-    <li>Musikk</li>
-    <li>Gaming</li>
-    <li>Natur</li>
-    <li>Lage mat</li>
-  </ul>
+<div class="joakim column justify-center basis" onclick="addMember('joakim')">
+    <div id="Joakim" onclick="addMember('joakim')">
+        <div class="text column text-center">show me</div>
+        <div class="text text-center">
+            <h1>Joakim Rørstad</h1>
+            <h2>Tønsberg</h2>
+        </div>
+        <div>
+            <ul class="text">
+                <li>Musikk</li>
+                <li>IT</li>
+                <li>Friluft</li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 
-
- 
-
-
-
+<div id="Lavinia" class="basis Lavinia" onclick="addMember2('Lavinia Caroline', ['Musikk', 'Gaming', 'Natur', 'Lage mat'])">
+    <h1 class="text-center">Lavinia Caroline</h1>
+    <h2>Sandvika, Bærum</h2>
+    <ul class="profile-box">
+        <li>Musikk</li>
+        <li>Gaming</li>
+        <li>Natur</li>
+        <li>Lage mat</li>
+    </ul>
+</div> 
 
  <div id="cato" class="Cato basis">
     

@@ -21,10 +21,6 @@ function changeBgColor() {
    else {
       // om toggle er false så kjøres denne koden og bakgrunnen endres til grå
       document.querySelector("body").style.backgroundColor = "#93b438"
-
-
-
-
    }
 
    // gjør variable "toggle" til "false"
@@ -36,7 +32,7 @@ let isJoakim = false;
 let joakimId = document.getElementById("Joakim")
 
 function toggleJoakim() {
-   clearAllCards()
+   clearAllCards();
    !isJoakim ? (clearJoakim(), isJoakim = !isJoakim) :
        (joakimId.innerHTML = `
          <h1 class="text">Joakim Rørstad</h1>
@@ -55,20 +51,33 @@ function clearJoakim() {
    joakimId.innerHTML = /*HTML*/ `<div class="text column text-center">show me</div>`
 };
 
+/* 
+function testToggle(member) {
+   name.toggleAttribute("hidden");
+   
+}
+
 toggleJoakim();
+ */
 
-let stateMartinius = false
+function addMember(name, likes){
+   if (name === "cato") {
 
-function toggleMartinius() {
-   if (stateMartinius === true) {
-      hideMartinius()
-      stateMartinius = false
    }
-   else if (stateMartinius === false) {
-      clearAllCards()
-      showMartinius()
-      stateMartinius = true
+   if (name === "lavinia") {
+
    }
+   if (name === "joakim") {
+      joakimId.toggleAttribute("hidden");
+
+   }
+   if (name === "jesse") {
+
+   }
+   if (name === "martinius") {
+      document.getElementById("martinius").innerHTML = `${likes}`
+   }
+   
 }
 
 function hideMartinius() {
@@ -76,8 +85,7 @@ function hideMartinius() {
 }
 
 function showMartinius() {
-   document.getElementById("martinius").innerHTML = `
-         <div class="column align-center text-center gap-2">
+   addMember("martinius", `<div class="column align-center text-center gap-2">
             <h1>Martinius Karlsen</h1>
             <h2>Drammen</h2>
          </div>
@@ -90,9 +98,38 @@ function showMartinius() {
                <li>Parapsykologi</li>
                <li>Self-hosting</li>
             </ul>
-         </div>`
+         </div>`)
 }
-toggleMartinius()
+
+let stateLavinia = false;
+
+function toggleLavinia() {
+   if (stateLavinia === true) {
+      hideLavinia();
+      stateLavinia = false;
+   } else {
+      clearAllCards();
+      showLavinia();
+      stateLavinia = true;
+   }
+}
+
+function hideLavinia() {
+   document.getElementById("Lavinia").innerHTML = `<h1 class="text-center">Show Lavinia</h1>`;
+}
+
+function showLavinia() {
+   document.getElementById("Lavinia").innerHTML = `
+      <h1 class="text-center">Lavinia Caroline</h1>
+      <h2>Sandvika, Bærum</h2>
+      <ul class="profile-box">
+         <li>Musikk</li>
+         <li>Gaming</li>
+         <li>Natur</li>
+         <li>Lage mat</li>
+      </ul>
+   `;
+}
 
 function showCato() {
    document.getElementById("cato").innerHTML = `
@@ -121,7 +158,9 @@ hideCato()
 
 function clearAllCards() {
    hideMartinius();
+   /* 
    clearJoakim();
+    */
    hideCato();
   
 }
@@ -176,38 +215,23 @@ toggleJesse();
 
 
 
-let stateLavinia = false;
+function addMember2(name, likes) {
+    let likesList = "";
+    
+    for (let i = 0; i < likes.length; i++) {
+        likesList += "<li>" + likes[i] + "</li>";
+    }
 
-function toggleLavinia() {
-   if (stateLavinia === true) {
-      hideLavinia();
-      stateLavinia = false;
-   } else if (stateLavinia === false) {
-      clearAllCards();
-      showLavinia();
-      stateLavinia = true;
-   }
+    let card = "<div class='basis'>" +
+               "<h1 class='text'>" + name + "</h1>" +
+               "<h2>Sandvika, Bærum</h2>" +
+               "<ul class='profile-box'>" + likesList + "</ul>" +
+               "</div>";
+
+    document.getElementById("team-container").innerHTML += card;
+    
 }
 
-function hideLavinia() {
-   document.getElementById("Lavinia").innerHTML = `<h1 class="text-center">Show Lavinia</h1>`;
-}
-
-function showLavinia() {
-   document.getElementById("Lavinia").innerHTML = `
-      <div class="column align-center text-center gap-2">
-         <h1>Lavinia</h1>
-         <h2>Sandvika, Bærum</h2>
-         <ul class="profile-box">
-            <li>Musikk</li>
-            <li>Gaming</li>
-            <li>Natur</li>
-            <li>Lage mat</li>
-         </ul>
-      </div>
-   `;
-}
-toggleLavinia();
 
 
 
